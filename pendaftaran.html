@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+    shrink-to-fit=no">
+    <title>SH_Beauty - JAFRA Kosmetik</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/ekko-lightbox.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <nav id="main-navbar" class="navbar navbar-expand-md navbar-dark bg-dark py-0">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <span class="d-none" >Encep Nurdin</span>
+          <img src="img/ilkoom_logo.png" class="main-logo d-none d-md-inline"
+          alt="ilkoom logo">
+          <img src="img/ilkoom_logo.png" class="small-logo d-inline d-md-none"
+          alt="ilkoom logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+          data-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link p-4" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-4" href="bisnisjafra.html">Bisnis JAFRA</a>
+            </li
+            <li class="nav-item">
+              <a class="nav-link p-4" href="produkskin.html">Produk JAFRA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-4" href="#">Kontak Kami</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-4 active" href="http://www.kosmetikmurah.online">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HEADER IMAGE -->
+    <header id="gallery-header" class="header-image text-white d-none d-md-block">
+      <div class="header-overlay">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h1 class="display-1"> Form Pendaftaran</h1>
+              <p>Silahkan kamu isi form dibawah ini dengan lengkap dan benar untuk pendaftaran member JAFRA. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- BREADCRUMB CONTAINER -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+
+            <!-- BREADCRUMB -->
+            <nav>
+              <ol class="breadcrumb bg-white ml-0 mt-4">
+                <li class="breadcrumb-item">
+                  <a href="index.html" class="text-info">Home</a>
+                </li>
+                <li class="breadcrumb-item active">Form Pendaftaran</li>
+              </ol>
+            </nav>
+            <hr>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+      
+        <form action="proses.php" method="post">
+        <table width="700" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#000" style="padding: 2px">
+            <tr>
+                <td height="40" align="center" bgcolor="#000">
+                    <font color="#FFFFFF"><b>FORM PENDAFTARAN JAFRA</b></font></td>
+            </tr>
+            <tr>
+                <td bgcolor="#FFFFFF"><table width="700" border="0" align="center" cellpadding="5"  cellspacing="0">
+                </td>
+                <tr>
+           <td  width="113">Nama Lengkap</td><td width="11">:</td>
+            <td  width="237"><input name="nama" type="text" size="30" maxlength="30" value="Encep Nurdin"></td>
+        </tr>
+                <tr>
+                    <td>Alamat</td>
+                    <td>:</td>
+                    <td><input name="NPM" type="text" size="50" maxlength="30" value="Gunung Sugih Lampung Tengah"></td>
+                </tr>
+                <tr>
+            <td>No. HP</td>
+            <td>:</td>
+            <td><input  name="hp" type="text" size="30" maxlength="30" value="085789400334"></td>
+        </tr>
+                <tr>
+            <td>Pekerjaan</td>
+            <td>:</td>
+             <td>
+                <input type="radio" name="pekerjaan" value="Mahasiswi">Mahasiswi<br>
+                <input type="radio" name="pekerjaan" value="Pegawai">Pegawai<br>
+                <input type="radio" name="pekerjaan" value="Ibu Rumah Tangga">Ibu Rumah Tangga<br>
+                <input type="radio" name="pekerjaan" value="Pedagang">Pedagang<br>
+                <input type="radio" name="pekerjaan" value="Wiraswasta">Wiraswasta<br>
+            </td>
+        </tr>
+                <tr>
+            <td>Status</td>
+            <td>:</td>
+            <td>
+            <select name="status">
+                <option>Menikah</option>
+                <option>Belum Menikah</option>
+                
+                </select>
+            </td>
+        </tr>
+                <tr>
+            <td>Motivasi Daftar</td>
+            <td>:</td>
+            <td><textarea name="saran" cols="30"  rows="5"></textarea></td>
+                 <tr>
+            <td></td>
+            <td></td>
+            <td><input type="submit" name="submit" value="SIMPAN"> </td>
+        </tr>
+    </table>
+            </form>
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/ekko-lightbox.js"></script>
+    <script>
+      $(document).on('click','[data-toggle="lightbox"]',function(event){
+        event.preventDefault();
+        $(this).ekkoLightbox();
+      })
+    </script>
+  </body>
+</html>
